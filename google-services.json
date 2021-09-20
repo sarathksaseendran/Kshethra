@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13775281683",
+    "firebase_url": "https://sks003-7313d.firebaseio.com",
+    "project_id": "sks003-7313d",
+    "storage_bucket": "sks003-7313d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13775281683:android:0becb02d9fc7040dfee9e6",
+        "android_client_info": {
+          "package_name": "com.sarathk.sk.kshethra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13775281683-43td9v1ai7bbuvsbmild7jqq07l350so.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0IlLA97ycSS3ph-jxjhViOMJLMO8X4hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13775281683-43td9v1ai7bbuvsbmild7jqq07l350so.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

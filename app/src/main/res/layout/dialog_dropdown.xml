@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/select_title"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FontSizeSixteenBold"
+            android:textColor="@color/colorBlack"
+            android:padding="10dp"/>
+
+        <ListView
+            android:id="@+id/select_listview"
+            android:dividerHeight="1px"
+            android:divider="@color/colorGrey"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:id="@+id/cancel"
+            android:text="@string/cancel"
+            android:background="@drawable/layout_rect_grn_rounded"
+            style="@style/FontSizeFifteen"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

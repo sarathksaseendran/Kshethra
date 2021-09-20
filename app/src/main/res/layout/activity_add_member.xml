@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.member.AddMemberActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/name"
+            android:textAlignment="center"
+            android:id="@+id/nameEditText"
+            android:background="@drawable/layout_rect_white_border"
+            android:padding="5dp"
+            android:maxLength="99"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_height="44dp"
+            android:maxLines="1"
+            android:textColorHint="@color/colorGrey"
+            style="@style/FontSizeSixteen"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/house_name"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:id="@+id/housenameEditText"
+            android:background="@drawable/layout_rect_white_border"
+            android:padding="5dp"
+            android:maxLength="99"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:layout_height="44dp"
+            android:maxLines="1"
+            android:textColorHint="@color/colorGrey"
+            style="@style/FontSizeSixteen"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/genderButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            style="@style/FontSizeSixteen"
+            android:background="@drawable/layout_rect_white_border"
+            android:text="@string/gender"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dobButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            style="@style/FontSizeSixteen"
+            android:background="@drawable/layout_rect_white_border"
+            android:text="@string/date_of_birth"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/starButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            style="@style/FontSizeSixteen"
+            android:background="@drawable/layout_rect_white_border"
+            android:text="@string/nakshathram"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrey" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="44dp"-->
+<!--            android:background="@drawable/layout_rect_green_rounded"-->
+<!--            android:layout_marginTop="15dp">-->
+
+<!--            <Spinner-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:id="@+id/starSpinner"-->
+<!--                style="@style/FontSizeSixteen"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="44dp"-->
+<!--                android:gravity="center" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:id="@+id/starImageView"-->
+<!--                android:tint="@color/colorWhite"-->
+<!--                android:src="@drawable/down_arrow_img"-->
+<!--                android:padding="8dp"/>-->
+
+<!--        </LinearLayout>-->
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/address_line_1"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:id="@+id/address1EditText"
+            android:background="@drawable/layout_rect_white_border"
+            android:padding="5dp"
+            android:maxLength="99"
+            android:inputType="text"
+            android:layout_height="44dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/colorGrey"
+            style="@style/FontSizeSixteen"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/address_line_2"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:id="@+id/address2EditText"
+            android:background="@drawable/layout_rect_white_border"
+            android:padding="5dp"
+            android:maxLength="99"
+            android:inputType="text"
+            android:layout_height="44dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/colorGrey"
+            style="@style/FontSizeSixteen"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/landline"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:id="@+id/landlineEditText"
+            android:background="@drawable/layout_rect_white_border"
+            android:padding="5dp"
+            android:maxLength="15"
+            android:inputType="phone"
+            android:layout_height="44dp"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:textColorHint="@color/colorGrey"
+            style="@style/FontSizeSixteen"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:hint="@string/mobile_phone"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:id="@+id/mobileEditText"
+            android:background="@drawable/layout_rect_white_border"
+            android:padding="5dp"
+            android:maxLength="15"
+            android:inputType="phone"
+            android:layout_height="44dp"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/colorGrey"
+            style="@style/FontSizeSixteen"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorBlack"
+            android:gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/familyHeadButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            style="@style/FontSizeSixteen"
+            android:background="@drawable/layout_rect_white_border"
+            android:text="@string/family_head_name"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrey" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/relationButton"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="15dp"
+            style="@style/FontSizeSixteen"
+            android:background="@drawable/layout_rect_white_border"
+            android:text="@string/relation"
+            android:textAllCaps="false"
+            android:textColor="@color/colorGrey" />
+
+        <LinearLayout
+            android:id="@+id/isHeadCheckBoxLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:background="@drawable/layout_rect_white_border"
+            android:layout_marginTop="15dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:background="@android:color/transparent"
+                android:id="@+id/isHeadCheckBox"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorGreen"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:text="@string/is_a_family_head"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/logUserImageView"
+                style="@style/FontSizeFourteen" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp"
+            style="@style/FontSizeSeventeen"
+            android:background="@drawable/layout_rect_grn_rounded"
+            android:text="@string/create_member"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</ScrollView>

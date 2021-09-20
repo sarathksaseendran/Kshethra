@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.familyheads.AddFamilyHeadsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="40dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+            <Button
+                android:id="@+id/selectphotoButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/layout_round_green"
+                android:text="@string/select_photo"
+                android:textColor="@android:color/white"
+                style="@style/FontSizeFourteen" />
+
+            <com.sarathk.sk.kshethra.utilities.CircleImageView
+                android:layout_height="150dp"
+                android:layout_width="150dp"
+                android:id="@+id/selectphotoImageView"
+                app:civ_border_color="@color/colorWhite"
+                app:civ_border_width="4dp"
+                android:src="@drawable/logo_default" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="35dp"
+            android:background="@drawable/layout_rect_white_border"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:tint="@color/colorGreen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user"
+                android:layout_marginLeft="10dp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:textColor="@color/colorBlack"
+                android:hint="@string/name"
+                android:letterSpacing="0.025"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:maxLength="198"
+                style="@style/FontSizeSixteen"
+                android:textColorHint="@color/colorGrey"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp"
+            style="@style/FontSizeSeventeen"
+            android:background="@drawable/layout_rect_grn_rounded"
+            android:text="@string/create_head"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+</ScrollView>
